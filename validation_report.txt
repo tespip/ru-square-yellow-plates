@@ -1,0 +1,54 @@
+validate_dataset.py v1.0 — Волга-IT 2026, полуфинал, номинация «ИИ и анализ данных»
+Датасет: C:\Dev\VolgaIT26\ru-square-yellow-plates\dataset
+
+== Статистика ==
+Изображений: 5613 (реальных 613, синтетических 5000, без разметки в meta 0)
+Строк в meta.csv: 5679
+Знаков по типам: {'type1a': 1945, 'type1': 1144, 'type1b': 2048, 'other': 542}
+Реальных изображений по типам: {'type1a': 157, 'type1': 131, 'type1b': 300, 'other': 55}  (рекомендуется {'type1a': 150, 'type1b': 300, 'other': 50})
+Уникальных читаемых ГРЗ (реальные): {'type1a': 134, 'type1': 144, 'type1b': 233, 'other': 36}  (рекомендуется {'type1a': 50, 'type1b': 100})
+Условия съёмки: {'day': 4647, 'motion_blur': 635, 'glare': 945, 'angle': 1432, 'night': 1032, 'dirt': 998, 'snow': 294, 'rain': 408}
+Лицензии: {'CC BY 4.0 (generated) | bg: CC BY 4.0, (c) 2018-2024 ARS Online OU | author: ARS Online OU': 5000, 'CC0': 222, 'CC BY 4.0': 179, 'own': 175, 'CC BY 4.0, (c) 2018-2024 ARS Online OU': 87, 'public domain': 16}
+Источники (топ): {'synthetic generator v1 seed=42 | bg=AUTO.RIA Numberplate ...': 5000, 'own_photo': 175, 'https://universe.roboflow.com/platerecognition/licensepla...': 91, 'AUTO.RIA Numberplate Options Dataset (ARS Online OU) via ...': 87, 'https://universe.roboflow.com/testcarplate/russian-licens...': 53, 'https://universe.roboflow.com/fverwfgerwf/two-line-russia...': 24, 'https://commons.wikimedia.org/wiki/File:Moscow_car_meet_2...': 16, 'https://commons.wikimedia.org/wiki/File:Moscow,_Kamaz-628...': 13, 'https://commons.wikimedia.org/wiki/File:Moscow,_Taganka,_...': 8, 'https://commons.wikimedia.org/wiki/File:Moscow,_LIAZ-6274...': 6, 'https://commons.wikimedia.org/wiki/File:Moscow,_Rogozhsky...': 6, 'https://universe.roboflow.com/skat-wjz9d/russian-license-...': 6, 'https://commons.wikimedia.org/wiki/File:Moscow_car_show_2...': 5, 'https://commons.wikimedia.org/wiki/File:Moscow,_Varvarka_...': 5, 'https://commons.wikimedia.org/wiki/File:Mostransavto_Stup...': 5}
+Побайтовых дубликатов: 0; совпадений с отладочным набором: 0
+
+== ERROR: 0 ==
+
+== WARNING: 37 ==
+-- meta-bbox (37)
+   [WARNING] meta-bbox              meta.csv:167: type1b, но соотношение сторон bbox 1.71 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:172: type1b, но соотношение сторон bbox 1.77 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:177: type1b, но соотношение сторон bbox 1.82 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:188: type1b, но соотношение сторон bbox 1.76 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:199: type1b, но соотношение сторон bbox 1.82 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:210: type1b, но соотношение сторон bbox 1.87 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:216: type1b, но соотношение сторон bbox 1.46 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:219: type1b, но соотношение сторон bbox 1.85 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:231: type1b, но соотношение сторон bbox 1.79 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:270: type1b, но соотношение сторон bbox 1.78 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:279: type1b, но соотношение сторон bbox 1.95 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:323: type1b, но соотношение сторон bbox 1.61 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:328: type1b, но соотношение сторон bbox 1.22 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:349: type1b, но соотношение сторон bbox 1.61 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:350: type1b, но соотношение сторон bbox 1.27 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:351: type1b, но соотношение сторон bbox 1.91 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:367: type1b, но соотношение сторон bbox 1.53 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:376: type1b, но соотношение сторон bbox 1.93 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:382: type1b, но соотношение сторон bbox 1.95 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:383: type1b, но соотношение сторон bbox 1.63 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:398: type1b, но соотношение сторон bbox 1.93 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:444: bbox занимает почти весь кадр — это кроп знака, а не кадр с камеры?
+   [WARNING] meta-bbox              meta.csv:447: type1b, но соотношение сторон bbox 1.75 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:448: type1b, но соотношение сторон bbox 1.89 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:450: type1b, но соотношение сторон bbox 1.54 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:489: type1b, но соотношение сторон bbox 1.38 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:501: type1b, но соотношение сторон bbox 1.92 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:517: type1b, но соотношение сторон bbox 1.66 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   [WARNING] meta-bbox              meta.csv:530: bbox занимает почти весь кадр — это кроп знака, а не кадр с камеры?
+   [WARNING] meta-bbox              meta.csv:5565: type1, но соотношение сторон bbox 1.52 — однострочный знак обычно ≥ 2.5 (перспектива?)
+   ... ещё 7 (см. JSON-отчёт)
+
+Напоминание (проверяется жюри вручную): лица людей размыты; нет кадров, где человек — смысловой центр;
+материалы получены легально (п. 6.3); разметка не сфальсифицирована (п. 8).
+
+ИТОГ: валидация ПРОЙДЕНА с предупреждениями. Ошибок: 0, предупреждений: 37.

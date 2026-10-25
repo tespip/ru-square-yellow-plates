@@ -1,0 +1,7 @@
+backend: ultralytics
+class_labels:
+- type1
+- type1a
+- type1b
+imgsz: 416
+model: weights/detector_416.onnx

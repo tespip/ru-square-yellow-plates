@@ -1,0 +1,6 @@
+numpy==2.4.3
+opencv-python-headless==4.13.0.92
+onnxruntime==1.23.0
+pyyaml==6.0.3
+open-image-models==0.5.1
+fast-plate-ocr==1.1.0

@@ -1,0 +1,46 @@
+detector:
+  backend: ultralytics
+  model: weights/detector_416.onnx
+  class_labels: [type1, type1a, type1b]
+  conf_thresh: 0.30
+  iou_thresh: 0.45
+  providers: null                     
+  tiles: "off"
+  tile_grid: [2, 2]
+  tile_overlap: 0.2
+
+ocr:
+  model: weights/ocr_ru.onnx
+  plate_config: weights/ocr_ru_plate_config.yaml
+  providers: null
+
+rectify:
+  enabled: true
+  margin: 0.15                       
+  single_line_size: [300, 65]          
+  two_line_size: [232, 136]           
+
+classify:
+  mode: auto                         
+  yellow_min_fraction: 0.30          
+  white_max_yellow_fraction: 0.10
+  two_line_max_aspect: 2.3        
+  single_line_min_aspect: 3.2       
+  ambiguous_split_aspect: 2.6         
+
+two_line:
+  split: 0.49                         
+  overlap: 0.02
+  flag_cut: 0.0                      
+  row_height: 64
+
+postprocess:
+  min_confidence: 0.50               
+  min_char_prob: 0.0                 
+  emit_other: true                    
+
+vehicle_check:
+  enabled: false                      
+  model: weights/yolo11n_coco.onnx
+  conf_thresh: 0.25
+  min_overlap: 0.70
