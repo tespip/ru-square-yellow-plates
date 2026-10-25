@@ -70,7 +70,7 @@ image;plate_num;plate_type;bbox;quad;is_vehicle;is_synthetic;source;license;cond
 | type1a (квадратные) | 157 | 158 | 1787 |
 | type1b (жёлтые) | 300 | 309 |  1739 |
 | other | 55 | 55 | 487 |
-| Итого | 613 | 679 | | 5000 |
+| Итого | 613 | 679 | 5000 |
 
 ### Условия съёмки (по числу знаков)
 
