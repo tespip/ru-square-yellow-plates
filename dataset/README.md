@@ -65,7 +65,7 @@ image;plate_num;plate_type;bbox;quad;is_vehicle;is_synthetic;source;license;cond
 ### По типам
 
 | Тип | Реальных фото | Реальных знаков | Синтетика |
-|---|---|---|---|---|
+|---|---|---|---|
 | type1 | 131 | 157 | 987 |
 | type1a (квадратные) | 157 | 158 | 1787 |
 | type1b (жёлтые) | 300 | 309 |  1739 |
