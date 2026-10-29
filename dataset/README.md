@@ -72,7 +72,7 @@ image;plate_num;plate_type;bbox;quad;is_vehicle;is_synthetic;source;license;cond
 | other | 55 | 55 | 487 |
 | Итого | 613 | 679 | 5000 |
 
-### Условия съёмки (по числу знаков)
+### Условия съемки (по числу знаков)
 
 | Тег | Реальные | Синтетика |
 |---|---|---|
